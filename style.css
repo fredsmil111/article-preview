@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #e9eef5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 700px;
+  position: relative;
+}
+
+.card-image img {
+  width: 260px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 24px;
+  position: relative;
+}
+
+.card-content h2 {
+  font-size: 18px;
+  color: #2d3748;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #718096;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.author p {
+  font-size: 13px;
+  color: #2d3748;
+}
+
+.author span {
+  font-size: 12px;
+  color: #a0aec0;
+}
+
+.share-btn {
+  background: #edf2f7;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.share-btn:hover {
+  background: #cbd5e0;
+}
+
+.share-menu {
+  position: absolute;
+  right: 50px;
+  bottom: 40px;
+  display: none;
+  align-items: center;
+  background: #2d3748;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 12px;
+  gap: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.share-menu::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  right: 30px;
+  width: 12px;
+  height: 12px;
+  background: #2d3748;
+  transform: rotate(45deg);
+}
+
+.share-menu span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #cbd5e0;
+}
+
+.share-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.share-menu a:hover {
+  color: #63b3ed;
+}
+
+.show {
+  display: flex;
+}
